@@ -1,6 +1,11 @@
-# WiFi Mic — Setup Guide
+# WiFi Mic — Setup Guide [⚠️WiP]
 
-Stream your Android phone's microphone to your PC over Wi-Fi using OPUS audio encoding.
+⚠️ WORK IN PROGRESS!
+
+Stream your Android phone's microphone to your PC over Wi-Fi using OPUS audio encoding. 
+
+#NOTE
+Designed for QUALITY instead of low lantency. 
 
 ---
 
