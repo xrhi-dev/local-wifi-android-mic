@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="32dp"
+    android:background="#FAFAFA">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="WiFi Mic"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:textColor="#1A1A2E"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Stream mic audio to your PC"
+        android:textSize="15sp"
+        android:textColor="#6B6B8A"/>
+
+    <!-- Card -->
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        card_view:cardCornerRadius="16dp"
+        card_view:cardElevation="4dp"
+        card_view:cardBackgroundColor="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- IP Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PC IP Address"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.08"
+                android:textColor="#6B6B8A"/>
+
+            <!-- IP Input -->
+            <EditText
+                android:id="@+id/ipInput"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/input_background"
+                android:hint="e.g. 192.168.1.100"
+                android:inputType="number|numberDecimal|text"
+                android:imeOptions="actionNext"
+                android:textSize="16sp"
+                android:textColor="#1A1A2E"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"/>
+
+            <!-- Port Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Port"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.08"
+                android:textColor="#6B6B8A"/>
+
+            <!-- Port Input -->
+            <EditText
+                android:id="@+id/portInput"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/input_background"
+                android:hint="9999"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                android:textSize="16sp"
+                android:textColor="#1A1A2E"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Start / Stop button -->
+    <Button
+        android:id="@+id/btnToggle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="24dp"
+        android:text="Start Streaming"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4F46E5"
+        android:stateListAnimator="@null"/>
+
+    <!-- Status indicator -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/status_background"
+        android:padding="14dp">
+
+        <View
+            android:id="@+id/statusDot"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:background="@drawable/status_dot"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ready"
+            android:textSize="14sp"
+            android:textColor="#374151"/>
+
+    </LinearLayout>
+
+    <!-- How-to hint -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="1. Run receiver.py on your PC\n2. Enter your PC's IP address above\n3. Tap Start Streaming\n4. Set Discord / OBS mic to CABLE Output"
+        android:textSize="13sp"
+        android:textColor="#9CA3AF"
+        android:lineSpacingExtra="4dp"/>
+
+</LinearLayout>

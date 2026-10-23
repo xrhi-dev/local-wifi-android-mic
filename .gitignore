@@ -1,0 +1,38 @@
+
+# Gradle cache and generated files
+.gradle/
+**/build/
+
+# Android SDK paths on your computer
+local.properties
+**/local.properties
+
+# Android Studio settings and caches
+.idea/
+*.iml
+
+# Kotlin and native build output
+.kotlin/
+.cxx/
+.externalNativeBuild/
+
+# Generated APKs and Android build artifacts
+*.apk
+*.aab
+
+# Logs and temporary files
+*.log
+captures/
+.DS_Store
+Thumbs.db
+
+# Signing keys and credentials
+*.jks
+*.keystore
+keystore.properties
+secrets.properties
+
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
