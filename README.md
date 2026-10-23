@@ -4,8 +4,13 @@
 
 Stream your Android phone's microphone to your PC over Wi-Fi using OPUS audio encoding. 
 
-##NOTE
-Designed for QUALITY instead of low lantency. 
+---
+
+## How it works
+
+Designed for QUALITY AUDIO STREAMING instead of Low Latency
+
+---
 
 ---
 
